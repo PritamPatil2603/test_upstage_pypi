@@ -1,8 +1,9 @@
-name: Publish to PyPI
+name: Publish to PyPI  # Make sure the name is at the top
 
 on:
   release:
     types: [published]
+  workflow_dispatch:  # Adding manual trigger for testing
 
 permissions:
   contents: read
